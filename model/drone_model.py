@@ -301,7 +301,7 @@ class DroneSimulator(Simulator):
                     'w': w,
                     'zeta': zeta,
 
-                    'm': (4*self.m + self.params.M) * np.ones_like(tsim),
+                    'm': self.params.Mm * np.ones_like(tsim),
                     'I_x': self.params.I_x * np.ones_like(tsim),
                     'I_y': self.params.I_y * np.ones_like(tsim),
                     'I_z': self.params.I_z * np.ones_like(tsim),
